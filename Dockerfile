@@ -14,7 +14,7 @@ RUN cabal build --only-dependencies -j4
 COPY . /opt/${NAME}
 RUN cabal install
 
-RUN chmod +x /root/.local/bin/words-containing
+RUN chmod +x /root/.local/bin/${NAME}
 
 ARG UID=10001
 RUN adduser \
@@ -29,4 +29,4 @@ USER appuser
 
 EXPOSE 3001
 
-CMD [ "words-containing" ]
+ENTRYPOINT [ "words-containing" ]
