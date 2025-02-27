@@ -2,22 +2,29 @@
 
 module Main where
 
-import Data.List (nub)
-import MyLib qualified (someFunc)
-import Web.Scotty
+import Control.Monad.IO.Class (MonadIO (liftIO))
+import Web.Scotty (get, json, pathParam, scotty, text)
 
 main :: IO ()
 main = scotty 3001 $ do
   get "/" $ text "hello world"
 
-  get "/:letters" $ do
+  get "/all/:letters" $ do
     letters <- pathParam "letters"
-    words <- wordsWith letters <$> liftIO getWords
+    words <- wordsWithAll letters <$> liftIO getWords
+    json words
+
+  get "/any/:letters" $ do
+    letters <- pathParam "letters"
+    words <- wordsWithAny letters <$> liftIO getWords
     json words
 
 getWords :: IO [String]
 getWords = do
   lines <$> readFile "top-2500.txt"
 
-wordsWith :: String -> [String] -> [String]
-wordsWith xs = filter (all (`elem` xs))
+wordsWithAll :: String -> [String] -> [String]
+wordsWithAll xs = filter (all (`elem` xs))
+
+wordsWithAny :: String -> [String] -> [String]
+wordsWithAny xs = filter (any (`elem` xs))
