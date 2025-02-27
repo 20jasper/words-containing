@@ -14,6 +14,8 @@ RUN cabal build --only-dependencies -j4
 COPY . /opt/${NAME}
 RUN cabal install
 
+RUN chmod +x /root/.local/bin/words-containing
+
 ARG UID=10001
 RUN adduser \
     --disabled-password \
