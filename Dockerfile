@@ -14,7 +14,8 @@ RUN cabal build --only-dependencies -j4
 COPY . /opt/${NAME}
 RUN cabal install
 
-RUN chmod +x /root/.local/bin/${NAME}
+COPY /root/.local/bin/${NAME} /usr/local/bin/
+RUN chmod +x /usr/local/bin/${NAME}
 
 ARG UID=10001
 RUN adduser \
