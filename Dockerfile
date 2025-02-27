@@ -14,8 +14,6 @@ RUN cabal build --only-dependencies -j4
 COPY . /opt/${NAME}
 RUN cabal install
 
-RUN chmod +x /root/.local/bin/${NAME}
-
 ARG UID=10001
 RUN adduser \
     --disabled-password \
@@ -26,6 +24,8 @@ RUN adduser \
     --uid "${UID}" \
     appuser
 USER appuser
+
+RUN chmod +x /root/.local/bin/${NAME}
 
 EXPOSE 3001
 
