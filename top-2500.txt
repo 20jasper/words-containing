@@ -50,6 +50,7 @@ ahead
 aid
 ain't
 air
+alert
 alive
 all
 allow
@@ -127,6 +128,7 @@ attack
 attempt
 attended
 attention
+attire
 attitude
 auf
 august
@@ -550,6 +552,7 @@ efforts
 eight
 either
 electronic
+elite
 else
 emperor
 employed
@@ -568,6 +571,7 @@ enjoy
 enough
 enter
 entered
+entertain
 entire
 entirely
 entrance
@@ -578,6 +582,7 @@ escaped
 especially
 est
 established
+eternal
 ets
 ety
 europe
@@ -956,6 +961,7 @@ instead
 intellectual
 intelligence
 intended
+intent
 intention
 interest
 interested
@@ -1082,6 +1088,7 @@ listen
 listened
 literary
 literature
+litter
 little
 live
 lived
@@ -1225,6 +1232,7 @@ nature
 near
 nearer
 nearly
+neat
 necessary
 necessity
 neck
@@ -1494,8 +1502,10 @@ ran
 rank
 rapidly
 rare
+rat
 rate
 rather
+rattle
 reach
 reached
 read
@@ -1535,6 +1545,8 @@ remembered
 remove
 removed
 rendered
+rent
+rental
 repeated
 replied
 reply
@@ -1549,6 +1561,7 @@ respect
 rest
 result
 results
+retreat
 return
 returned
 returning
@@ -1856,6 +1869,7 @@ sword
 sympathy
 system
 table
+tail
 take
 taken
 takes
@@ -1865,6 +1879,8 @@ talk
 talked
 talking
 tall
+tan
+tanner
 task
 taste
 taught
@@ -1872,7 +1888,10 @@ tax
 te
 tea
 team
+tear
 tears
+tee
+teen
 teeth
 tell
 telling
@@ -1929,11 +1948,13 @@ throw
 thrown
 thus
 thy
+tie
 tight
 till
 time
 times
 tiny
+tire
 tired
 title
 to
@@ -1959,6 +1980,7 @@ trademark
 trail
 trailer
 train
+treat
 treated
 tree
 trees
